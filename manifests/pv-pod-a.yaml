@@ -3,6 +3,7 @@ kind: PersistentVolume
 metadata:
   name: pv-pod-a
 spec:
+  storageClassName: "nfs-static"
   capacity:
     storage: 100Mi
   accessModes:
