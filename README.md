@@ -2,6 +2,12 @@
 
 This project demonstrates how to isolate access between two Pods using NFS + POSIX ACLs.
 
+
+## The Architecture as below
+
+![image](https://github.com/user-attachments/assets/cc18aef5-32ff-4165-9d38-e911d17b47cd)
+
+
 ## Project Structure
 - Namespace: `nfs-acl`
 - Pod A: UID/GID 1001 → `/var/nfsshare/pod-a`
@@ -20,3 +26,4 @@ oc apply -f manifests/pod-a.yaml
 oc apply -f manifests/pv-pod-b.yaml
 oc apply -f manifests/pvc-pod-b.yaml
 oc apply -f manifests/pod-b.yaml
+
